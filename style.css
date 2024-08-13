@@ -13,7 +13,7 @@
     margin-right: -120px;
 }
 
-.btn:hover,.submit:hover{
+button:hover{
     background-color: #38bdf8 ;
     color: white;
 }
@@ -71,4 +71,27 @@
 .input:focus{
     border: 1px solid #38bdf8;
 
+}
+
+/* display cards */
+ 
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 30px;
+
+    width: 25%;
+
+    border-radius: 10px;
+    border: 2px black solid;
+    box-shadow: .3rem .3rem .3rem gray;
+} 
+.displayColumn{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.ToogleDisplay,.removeDisplay{
+    transition: .5s ease-in-out;
 }
