@@ -35,10 +35,10 @@
     border-radius: 10px;
     border: 2px black solid;
     box-shadow: .3rem .3rem .3rem gray;
+    transform: translateY(-1000px);
 
     opacity: 0;
-    transition: opacity .3s ease-in;
-    transition: transform 1s ease-in-out;
+    transition: transform .7s ease-in-out;
 }
 .column{
     display: grid;
