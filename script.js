@@ -1,22 +1,15 @@
 (function Start(){
-    
+
     //  SELECTING :
 
     const addBtn = document.querySelector(".btn")
     const submitBtn = document.querySelector(".submit")
     const form = document.querySelector(".formInput")
 
-    // EVENT LISTERNERS:
-
-    addBtn.addEventListener("click", ()=>{
-        form.style.opacity = 1
-        form.style.transform = 'translateY(100px)'
-    })
-
-    submitBtn.addEventListener("click",()=>{
-        form.style.opacity = 0
-        form.style.transform = 'translateY(-1000px)'
-    })
+    const author = document.querySelector(".author")
+    const title = document.querySelector(".title")
+    const pages = document.querySelector(".pages")
+    const read = document.querySelector(".read")
 
     // CODE:
 
@@ -42,6 +35,22 @@
     // function displayLibrary(){
 
     // } 
+
+
+    // EVENT LISTERNERS:
+
+    addBtn.addEventListener("click", ()=>{
+        form.style.opacity = 1
+        form.style.transform = 'translateY(100px)'
+    })
+
+    submitBtn.addEventListener("click",()=>{
+        
+        addBook(author.value,title.value,pages.value,read.checked)       
+        form.style.opacity = 0
+        form.style.transform = 'translateY(-1000px)'
+    })
+
     
 })()
 
