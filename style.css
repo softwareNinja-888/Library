@@ -5,11 +5,15 @@
 }
 
 
-.btn {
+.btn,.submit {
     transition: .5s ease-in-out;
+    
+}
+.btn{
+    margin-right: -120px;
 }
 
-.btn:hover{
+.btn:hover,.submit:hover{
     background-color: #38bdf8 ;
     color: white;
 }
@@ -31,6 +35,7 @@
     border-radius: 10px;
     border: 2px black solid;
     box-shadow: .3rem .3rem .3rem gray;
+
     opacity: 0;
     transition: opacity .3s ease-in;
     transition: transform 1s ease-in-out;
@@ -48,7 +53,4 @@
 .input:focus{
     border: 1px solid #38bdf8;
 
-}
-.submit {
-    align-self: center;
 }
