@@ -1,0 +1,12 @@
+.title{
+   animation: slide-in 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(50%);
+    }
+}
