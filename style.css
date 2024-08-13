@@ -13,3 +13,42 @@
     background-color: #38bdf8 ;
     color: white;
 }
+
+/* Form  */
+
+.input {
+    border: 1px solid black;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+
+    gap: 30px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    border: 2px black solid;
+    box-shadow: .3rem .3rem .3rem gray;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+    transition: transform 1s ease-in-out;
+}
+.column{
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 30% 80%;
+}
+.input {
+    width: 50%;
+    padding: 3px;
+    outline: none;
+}
+.input:focus{
+    border: 1px solid #38bdf8;
+
+}
+.submit {
+    align-self: center;
+}
