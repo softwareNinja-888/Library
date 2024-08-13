@@ -23,6 +23,24 @@
 .input {
     border: 1px solid black;
 }
+.headForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+}
+.close
+{
+    width: 5%;
+}
+.closeImg {
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+}
+.closeImg:hover{
+    transform: rotate(90deg);
+}
 
 .formInput{
     display: flex;
