@@ -1,12 +1,15 @@
-.title{
-   animation: slide-in 1s ease-in-out forwards;
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-@keyframes slide-in {
-    from{
-        transform: translateX(0px);
-    }
-    to{
-        transform: translateX(50%);
-    }
+
+.btn {
+    transition: .5s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #38bdf8 ;
+    color: white;
 }
