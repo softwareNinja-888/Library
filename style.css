@@ -17,6 +17,19 @@ button:hover{
     background-color: #38bdf8 ;
     color: white;
 }
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.removeDisplay,.ToogleDisplay{
+    border: 1px solid #38bdf8;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    color: #38bdf8;
+    gap: 10px;
+
+}
 
 /* Form  */
 
@@ -75,6 +88,11 @@ button:hover{
 
 /* display cards */
  
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 80px;
+}
 
 .card{
     display: flex;
@@ -82,7 +100,7 @@ button:hover{
     gap: 25px;
     padding: 50px 30px;
 
-    width: 25%;
+    width: 65%;
 
     border-radius: 10px;
     border: 2px black solid;
