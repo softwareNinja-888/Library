@@ -29,6 +29,8 @@
         this.pages = pages
         this.read = read
     }
+    // DEFALUT BOOK
+
 
     // CREATE BOOK AND ADD TO LIBRARY ARRAY
 
@@ -47,17 +49,18 @@
             cards.removeChild(cards.firstChild)
         }
 
-        library.forEach((e)=>{
-            createCard(e)
+        library.forEach((e,i)=>{
+            createCard(e,i)
         })
     }
 
     // CREATES CARDS FOR EACH BOOK IN LIBRARY
 
-    function createCard(info){
+    function createCard(info,i){
         const n = 4
         const card = document.createElement("div")
         card.classList.add("card")
+        card.dataset.indexNumber = i
 
         const lowArr = (arr,num)=> arr[num][0].toUpperCase()+arr[num].toLowerCase().slice(1)
 
@@ -104,6 +107,10 @@
         card.appendChild(btnCon)
         cards.appendChild(card)
 
+        rbtn.addEventListener("click",()=>{
+            library.splice(card.dataset.indexNumber,1)
+            displayBook(library)
+        })
     }
 
     // CLEAR FIELDS OF FORM 
