@@ -28,6 +28,10 @@
         this.title = title
         this.pages = pages
         this.read = read
+
+        this.toggle =  function(){
+            return (this.read) ? this.read = false: this.read = true;
+        }
     }
     // DEFALUT BOOK
 
@@ -111,6 +115,12 @@
             library.splice(card.dataset.indexNumber,1)
             displayBook(library)
         })
+        tbtn.addEventListener("click",()=>{
+            library[card.dataset.indexNumber].toggle()
+            displayBook(library)
+
+        })
+
     }
 
     // CLEAR FIELDS OF FORM 
