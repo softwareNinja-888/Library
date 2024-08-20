@@ -143,15 +143,30 @@
         author.required = true
         author.setAttribute("required","")
     })
+
+    // VALIDATE FUNCTION
     
+    const validate = (a,t,p)=>{
+        let list = [a,t,p]
+        const newL = list.forEach(el=>{
+            if (el.value === ""){
+                alert(`Please fill the ${el.id} field`)
+                return false
+            }
+
+        })
+
+    }
     // SUBMIT BUTTON ADDBOOK AND REMOVES MODAL
 
-    submitBtn.addEventListener("click",()=>{
-        
+    submitBtn.addEventListener("click",(event)=>{
+
+        // console.log(validate(author,title,pages,read.checked));
         addBook(author.value,title.value,pages.value,read.checked)  
         clearFields();  
         form.classList.remove("showing")
         overlay.classList.remove("showing")
+        event.preventDefault();
 
     })
 
